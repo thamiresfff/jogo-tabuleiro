@@ -1,0 +1,75 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    background-color: #121212; /* Alterado para um tom mais escuro */
+    color: white;
+}
+
+/* Estilização do título para diferenciar */
+.titulo {
+    font-size: 28px; /* Aumentei um pouco a fonte */
+    color: #FFD700; /* Alterado para dourado */
+    margin-bottom: 15px;
+}
+
+/* Define a grid layout para o tabuleiro */
+#tabuleiro {
+    display: grid;
+    grid-template-columns: repeat(7, 90px);
+    grid-template-rows: repeat(7, 90px);
+    gap: 5px;
+    background-color: #222; /* Alterado para um tom cinza-escuro */
+    padding: 10px;
+    border-radius: 10px;
+}
+
+/* Estilo para cada célula no tabuleiro */
+.casa {
+    width: 90px;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1a1a1a; /* Alterado para um preto mais fosco */
+    border: 1px solid rgb(99, 96, 96);
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+/* Novas cores para as peças */
+.azul {
+    background-color: rgb(15, 210, 190); /* Tom mais fechado */
+}
+
+.vermelho {
+    background-color: rgb(230, 20, 50); /* Alterei para um tom menos vibrante */
+}
+
+/* Destaque das casas válidas */
+.destacada {
+    background-color: rgb(70, 70, 65);
+}
+
+/* Destaque da última peça jogada */
+.ultima {
+    border: 3px solid #FFD700; /* Agora tem uma borda dourada */
+}
+
+/* Caixa de mensagem */
+#mensagem {
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* Cores das mensagens */
+.mensagem-azul {
+    color: rgb(15, 210, 190) !important;
+}
+
+.mensagem-vermelho {
+    color: rgb(230, 20, 50) !important;
+}
